@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PermissionDao">
+    <resultMap id="permission" type="Permission">
+        <id property="id" column="permission_id"></id>
+        <result property="name" column="permission_name"></result>
+        <collection property="roleList" ofType="Role" resultMap="role"></collection>
+    </resultMap>
+<resultMap id="role" type="Role">
+    <id property="id" column="role_id"></id>
+    <result property="name" column="role_name"></result>
+</resultMap>
+<!--permission是前面封装的permission对象，要与前面id里面的内容相对应.-->
+<select id="findById" resultMap="permission">
+      select
+      r.id role_id,
+      r.name role_name,
+      l.id permission_id,
+      l.name permission_name
+      from
+      role r,permission l,role_permission m
+      where r.id=m.rid and
+      l.id=m.pid AND l.id=#{id}
+  </select>
+
+</mapper>

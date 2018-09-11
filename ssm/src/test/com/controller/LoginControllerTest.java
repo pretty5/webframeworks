@@ -36,7 +36,7 @@ public class LoginControllerTest {
 
     @Test
     public void loginError() throws Exception {
-        mockMvc.perform(post("/login/login.do").param("username", "zhangsan"))
+        mockMvc.perform(post("/login/login.do").param("name", "zhangsan"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(view().name("error"));
@@ -45,11 +45,11 @@ public class LoginControllerTest {
     @Test
     public void loginSuccess() throws Exception {
         mockMvc.perform(post("/login/login.do")
-                .param("username", "zhangsan")
+                .param("name", "zhangsan")
                 .param("password", "123"))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(request().sessionAttribute("user", "zhangsan"))
+                .andExpect(request().sessionAttribute("name", "zhangsan"))
                 .andExpect(view().name("success"));
     }
 

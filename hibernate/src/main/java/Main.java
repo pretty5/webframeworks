@@ -39,6 +39,7 @@ public class Main {
                 for (Object o : query.list()) {
                     System.out.println("  " + o);
                     System.out.println("hello");
+                    System.out.println("he");
                 }
             }
         } finally {

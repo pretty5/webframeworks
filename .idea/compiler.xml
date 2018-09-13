@@ -7,17 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="batishomework" />
+        <module name="hibernate" />
         <module name="mybatisdemo" />
         <module name="springdemo" />
+        <module name="springhibernate" />
         <module name="springmybatis" />
         <module name="ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="batishomework" target="1.5" />
+      <module name="hibernate" target="1.5" />
       <module name="mybatisdemo" target="1.5" />
       <module name="sms" target="1.7" />
       <module name="springdemo" target="1.5" />
+      <module name="springhibernate" target="1.5" />
       <module name="springmybatis" target="1.5" />
       <module name="ssm" target="1.7" />
     </bytecodeTargetLevel>

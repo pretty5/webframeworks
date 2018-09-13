@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/springmybatis/pom.xml" />
         <option value="$PROJECT_DIR$/ssm/pom.xml" />
         <option value="$PROJECT_DIR$/sms/pom.xml" />
+        <option value="$PROJECT_DIR$/springhibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate/pom.xml" />
       </list>
     </option>
   </component>

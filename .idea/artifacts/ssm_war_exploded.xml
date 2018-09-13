@@ -28,6 +28,7 @@
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.20" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">
